@@ -1,0 +1,34 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.7.0",
+    "axios": "^0.27.2",
+    "dompurify": "^2.4.0",
+    "node-sass": "^7.0.1",
+    "react": "^18.0.0",
+    "react-cloudinary-upload-widget": "^1.6.0",
+    "react-countup": "^6.3.1",
+    "react-dom": "^18.0.0",
+    "react-otp-input": "^2.4.0",
+    "react-reveal": "^1.2.2",
+    "react-router-dom": "^6.3.0",
+    "react-select": "^5.4.0",
+    "sass": "^1.52.3",
+    "sweetalert2": "^11.4.32",
+    "swiper": "^8.3.1",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "vite": "^2.9.9"
+  }
+}

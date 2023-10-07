@@ -1,0 +1,73 @@
+$primary-color: #ffb579;
+
+.BAR__content__form__input__Comp__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.BAR__content__form__input__container {
+  display: flex;
+  border: 1px solid transparent;
+  // flex: 0 1 100%;
+  border-bottom: 1px solid gray;
+
+  // width: 80%;
+  justify-content: flex-start;
+  position: relative;
+  padding: 0.3rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.BAR__content__form__input__container p {
+  color: $primary-color;
+  font-size: 12px;
+  position: absolute;
+  top: -7px;
+  right: 0px;
+}
+.BAR__content__form__input__icon img {
+  width: 100%;
+  color: gray;
+}
+.BAR__content__form__input__icon {
+  width: 20px;
+  height: 20px;
+}
+.BAR__content__form__input__box {
+  width: 90%;
+  height: 30px;
+}
+.BAR__content__form__input__box input {
+  width: 100%;
+  height: 100%;
+  margin-left: 0.5rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  caret-color: $primary-color;
+  color: $primary-color;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.BAR__content__form__input__container:focus-within {
+  border-bottom: 1px solid $primary-color;
+
+  transition: all 0.3s ease-in-out;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $primary-color;
+  border: none;
+  // -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+  background-color: transparent;
+  transition: background-color 5000s ease-in-out 0s;
+}
