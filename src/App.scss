@@ -1079,13 +1079,9 @@ body {
 .user__landing__container__two__content__main__card {
   display: flex;
   height: 550px;
-  // border: 1px solid blue;
-  margin: 0 2rem;
-  position: absolute;
-  top: 160px;
+  margin-top: 3em;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   overflow: hidden;
-  left: 0;
   border-radius: 20px;
 }
 .user__landing__container__two__content__main__card__left {
@@ -1107,12 +1103,9 @@ body {
   object-fit: cover;
 }
 .user__landing__container__two__content__main__card__right {
-  height: 100%;
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  // border: 2px solid orangered;
   padding: 1rem;
 }
 .user__landing__container__two__content__main__card__right__preheading {
@@ -1324,13 +1317,14 @@ textarea:focus {
   margin-bottom: 6em;
 }
 .history__contaier__one__tabs__container__tabs {
-  width: 32%;
+  width: 36%;
   text-align: center;
   height: 100%;
   padding: 1em;
   border-radius: 40px;
-  // border: 1px solid white;
   transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
 }
 .history__contaier__one__tabs__container__tabs:hover {

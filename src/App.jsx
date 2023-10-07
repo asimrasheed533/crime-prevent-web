@@ -41,7 +41,7 @@ function App() {
           <Route path="/change_pass" element={<ChangePassword />} />
           <Route path="/upload_pic" element={<UploadPicture />} />
           <Route path="/profile" element={<Profile />} />
-          <Route path="/blog-details" element={<BlogDetails />} />
+          {/* <Route path="/blog-details" element={<BlogDetails />} /> */}
           <Route
             path="*"
             element={

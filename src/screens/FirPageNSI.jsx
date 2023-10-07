@@ -2,17 +2,15 @@ import React from "react";
 import Wrapper from "../assets/Wrapper.png";
 import Header from "../components/Header";
 import sadIcon from "../assets/sadIcon.png";
-// import { HeaderContext } from "../Contexts/HeaderContext";
 
 export default function FirPageNSI() {
-  // const { showHeader, setShowHeader } = useContext(HeaderContext);
-
   return (
     <div className="user__landing__container__main">
       <div className="user__landing__container__one">
         <div
           className="user__landing__container__one__img"
-          id="fir__container__one__img">
+          id="fir__container__one__img"
+        >
           <img src={Wrapper} alt="Wrapper" />
         </div>
         <div className="user__landing__header__wrapper">
