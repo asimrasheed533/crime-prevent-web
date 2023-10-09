@@ -919,6 +919,7 @@ body {
   text-decoration: none;
   color: white;
   padding: 0.5rem 1.5rem;
+  margin: 12px 0px;
   border-radius: 25px;
   transition: all 0.3s ease-in-out;
 }
@@ -1596,7 +1597,7 @@ textarea:focus {
   border: none;
   cursor: pointer;
   padding: 0em;
-  // display: none;
+  display: none;
   align-items: center;
   justify-content: center;
 }
@@ -1627,7 +1628,7 @@ textarea:focus {
   transition: 300ms ease-in-out;
   background-color: $primary-hover;
 }
-@media (max-width: 900) {
+@media (max-width: 900px) {
   .user__landing__header__wrapper__links {
     flex-direction: column;
     position: absolute;
@@ -1651,5 +1652,10 @@ textarea:focus {
   }
   .header__content__menu {
     display: flex;
+  }
+  .user__landing__header__wrapper__signin {
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1em;
   }
 }
