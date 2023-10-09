@@ -12,6 +12,7 @@ function Header() {
   const { user } = useContext(UserContext);
   const userImage = `https://res.cloudinary.com/arslan0143/image/upload/${user.image}`;
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolling, setIsScrolling] = React.useState(false);
   function changeNavState() {
     if (window.innerWidth < 900) {
       setIsOpen(false);
@@ -23,13 +24,20 @@ function Header() {
     changeNavState();
     window.addEventListener("resize", changeNavState);
     window.addEventListener("scroll", () => {
-      changeNavState();
+      if (window.scrollY > 0) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
     });
+    return () => {
+      window.removeEventListener("resize", changeNavState);
+    };
   }, []);
   return (
     <div
       className={
-        showHeader
+        isScrolling
           ? "header__comp__wrappper header__comp__wrappper__active"
           : "header__comp__wrappper"
       }
