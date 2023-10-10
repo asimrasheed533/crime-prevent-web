@@ -12,7 +12,7 @@ export function HomeStats() {
         <Fade bottom distance="30%">
           <div className="home__stats__content__entry">
             <div className="home__stats__content__entry__heading">
-              <CountUp end={540} redraw={true} duration={6} />+
+              <CountUp end={340} redraw={true} duration={2} />+
             </div>
             <div className="home__stats__content__entry__content">
               Users weekly registered
