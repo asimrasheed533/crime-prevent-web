@@ -10,7 +10,6 @@ import UploadPicture from "./screens/UploadPic";
 import Profile from "./screens/Profile";
 import Footer from "./components/Footer/Footer";
 import FirPage from "./screens/FirPage";
-import UserLanding from "./screens/UserLanding";
 import Contact from "./screens/Contact";
 import FirPageNSI from "./screens/FirPageNSI";
 import History from "./screens/History";
@@ -19,6 +18,7 @@ import HistoryNSI from "./screens/HistoryNSI";
 import { UserContext } from "./Contexts/UserContext";
 import { WidgetLoader } from "react-cloudinary-upload-widget";
 import BlogDetails from "./screens/BlogDetails";
+import Home from "./screens/Home";
 function App() {
   const [showHeader, setShowHeader] = useState(false);
   const { user } = useContext(UserContext);
@@ -28,7 +28,7 @@ function App() {
       <WidgetLoader />
       <HeaderContext.Provider value={{ showHeader, setShowHeader }}>
         <Routes>
-          <Route path="/" element={<UserLanding />} />
+          <Route path="/" element={<Home />} />
           <Route path="/fir" element={<FirPage />} />
           <Route path="/fir_not_signed" element={<FirPageNSI />} />
           <Route path="/history" element={<History />} />

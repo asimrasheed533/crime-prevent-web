@@ -34,10 +34,11 @@ export default function Home() {
               CONSILE LAW FIRM
             </div>
             <div className="user__landing__container__one__heading">
-              doctrine acdmy
+              Unbelievable Solution for Reporting Crime
             </div>
             <div className="user__landing__container__one__para">
-              doctrine ac we will take care of the rest.
+              Reporting crime online was never so easy. Just fill the form and
+              we will take care of the rest.
             </div>
             <div className="user__landing__container__one__button">
               <a
