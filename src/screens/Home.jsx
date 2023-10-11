@@ -90,7 +90,7 @@ export default function Home() {
       </div>
 
       <HomeBlog />
-      <HomeNewsletter />
+      {/* <HomeNewsletter /> */}
     </div>
   );
 }
